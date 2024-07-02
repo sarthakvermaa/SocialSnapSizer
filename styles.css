@@ -1,0 +1,118 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 30px;
+    padding: 0;
+    background-color: #f4f4f4d3;
+    text-align: center;
+}
+  
+h1 {
+    color: #333333;
+    font-size: 24px;
+}
+  
+input[type="file"] {
+    display: none;
+}
+  
+.custom-file-upload {
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+select, input[type="number"] {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+  
+button:hover {
+    background-color: #45a049;
+}
+  
+#downloadLink {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+  
+#downloadLink:hover {
+    background-color: #45a049;
+}
+  
+.form-container {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reference-link {
+    color: blue;
+    text-align: right;
+    /* margin-right: 10px; */
+    font-size: 10px;
+}
+
+.hidden {
+    display: none;
+}
+  
+.custom-input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#uploadMessage {
+    color: green;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.output-format-label {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 10px;
+    color: #333;
+    display: block;
+    text-align: left;
+  }
+
+.output-format-label {
+    margin: 10px;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    text-align: left;
+  }

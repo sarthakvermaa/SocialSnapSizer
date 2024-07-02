@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SocialSnapSizer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>SocialSnapSizer</h1>
+  <div class="form-container">
+    <div class="input-container">
+      <label for="imageInput" class="custom-file-upload">Choose Image</label>
+      <input type="file" id="imageInput" accept="image/*"> 
+    </div>
+    <a href="/2024-social-media-image-sizes-reference.png" target="_blank" class="reference-link">Preset size reference</a>
+    
+    <select id="presetDimensions">
+      <option value="facebook">Facebook</option>
+      <option value="instagram">Instagram</option>
+      <option value="twitter">Twitter</option>
+      <option value="linkedin">Linkedin</option>
+      <option value="custom">Custom</option>
+    </select>
+
+    <select id="imagePreset">
+      <!-- Options will be dynamically populated -->
+    </select>
+    
+    <input type="number" id="customWidth" placeholder="Custom Width" >
+    <input type="number" id="customHeight" placeholder="Custom Height">
+
+    <label for="bgFormat" class="bg-format-label">Background Fill
+      <input type="color" id="backgroundColor" value="#000000">
+    </label>
+    
+    <label for="outputFormat" class="output-format-label">Output Format</label>
+    <select id="outputFormat">
+      <option value="png">.png</option>
+      <option value="jpeg">.jpeg</option>
+      <option value="jpg">.jpg</option>
+      <option value="bmp">.bmp</option>
+      <option value="gif">.gif</option>
+      <option value="webp">.webp</option>
+      <option value="svg">.svg</option>
+      <option value="svgz">.svgz</option>
+      <option value="avif">.avif</option>
+      <option value="pjpeg">.pjpeg</option>
+      <option value="apng">.apng</option>
+      <option value="pjp">.pjp</option>
+      <option value="tiff">.tiff</option>
+      <option value="ico">.ico</option>
+      <option value="jfif">.jfif</option>
+      <option value="tif">.tif</option>
+      <option value="xbm">.xbm</option>
+    </select>
+
+
+    <button id="resizeButton">Resize</button>
+
+    <p id="uploadMessage" class="hidden"></p>
+  </div>
+  
+  <canvas id="imageCanvas" style="display:none;"></canvas>
+  <a id="downloadLink" style="display:none;">Download</a>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
